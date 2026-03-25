@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <p style="color: rgba(250,250,248,0.6); font-size: 14px; line-height: 1.6; margin-bottom: 24px;">
-                    Nevandra Pustaka Nusantara adalah mitra terpercaya bagi para penulis dan institusi dalam mewujudkan karya literasi berkualitas tinggi yang berakar pada nilai-nilai nusantara.
+                    Nevandra Pustaka Nusantara adalah mitra terpercaya bagi para penulis dan institusi dalam mewujudkan karya literasi berkualitas.
                 </p>
             </div>
             <div>
