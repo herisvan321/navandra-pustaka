@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nusanwo1/nevandra-pustaka.com
+    - /bin/cp -R * $DEPLOYPATH
