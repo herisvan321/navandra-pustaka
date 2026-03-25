@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Nevandra Pustaka Nusantara' }} – Penerbit Terpercaya di Nusantara</title>
+    <meta property="og:title" content="{{ $title ?? 'Nevandra Pustaka Nusantara' }} – Penerbit Terpercaya di Nusantara">
+    <meta property="og:description" content="Nevandra Pustaka Nusantara adalah mitra terpercaya bagi para penulis dan institusi dalam mewujudkan karya literasi berkualitas.">
+    <meta property="og:image" content="{{ asset('images/logo.png') }}">
+    <link rel="icon" href="{{ asset('icon.jpeg') }}" type="image/jpeg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
