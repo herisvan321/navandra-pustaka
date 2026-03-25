@@ -96,8 +96,8 @@ class DatabaseSeeder extends Seeder
             ['title' => 'Pilih Paket Penerbitan', 'description' => 'Kunjungi halaman Paket Penerbitan dan pilih paket yang sesuai dengan kebutuhan dan anggaran Anda.', 'note' => null, 'order' => 2],
             ['title' => 'Kirim Naskah & Lakukan Pembayaran', 'description' => 'Kirimkan naskah melalui email ke Nevandra.press@gmail.com atau via WhatsApp.', 'note' => 'Subject email: [NASKAH] Nama Judul – Nama Penulis', 'order' => 3],
             ['title' => 'Proses Editing & Desain', 'description' => 'Tim editor dan desainer kami akan mengerjakan naskah Anda. Anda akan mendapatkan draft layout dan cover.', 'note' => null, 'order' => 4],
-            ['title' => 'Persetujuan Final & Pelunasan', 'description' => 'Setelah Anda menyetujui semua file cetak, lakukan pelunasan sisa pembayaran.', 'note' => null, 'order' => 5],
-            ['title' => 'Cetak & Pengiriman', 'description' => 'Buku dicetak dan dikirimkan ke alamat Anda. Estimasi pengiriman 3–14 hari kerja.', 'note' => null, 'order' => 6],
+            ['title' => 'Persetujuan Final Proses pengajuan ISBN', 'description' => 'Setelah Anda menyetujui semua file cetak, lakukan pelunasan sisa pembayaran.', 'note' => null, 'order' => 5],
+            ['title' => 'Cetak & Pengiriman', 'description' => 'Setelah ISBN buku terbit, Buku dicetak dan dikirimkan ke alamat Anda. Estimasi pengiriman 3–14 hari kerja.', 'note' => null, 'order' => 6],
         ];
         foreach ($steps as $step) {
             PublishingStep::updateOrCreate(['title' => $step['title']], $step);
