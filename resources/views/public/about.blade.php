@@ -6,7 +6,7 @@
     <div class="section-hero-content">
       <div class="section-tag">Tentang Kami</div>
       <h1 class="section-title">Mengenal <span class="gold">Nevandra Pustaka Nusantara</span></h1>
-      <p class="section-desc">Perusahaan multisektoral yang bergerak di bidang literasi, percetakan, teknologi informasi, dan pengembangan sumber daya manusia.</p>
+      <p class="section-desc">Perusahaan multisektoral yang bergerak di bidang literasi, penerbitan, percetakan, teknologi informasi, dan pengembangan sumber daya manusia.</p>
     </div>
   </section>
 
