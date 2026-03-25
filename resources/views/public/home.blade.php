@@ -73,7 +73,7 @@
       <div class="service-card fade-in">
         <div class="service-icon">📚</div>
         <h3>Literasi & Penerbitan</h3>
-        <p>Penerbitan buku fiksi, non-fiksi, referensi, jurnal ilmiah, buletin, dan majalah dengan standar editorial ketat dan ISBN resmi dari Perpusnas RI.</p>
+        <p>Penerbitan buku ilmiah, fiksi, non-fiksi, referensi, jurnal ilmiah, buletin, dan majalah dengan standar editorial ketat dan ISBN resmi dari Perpusnas RI.</p>
       </div>
       <div class="service-card fade-in">
         <div class="service-icon">🖨️</div>
