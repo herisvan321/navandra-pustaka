@@ -30,7 +30,7 @@
                 <li><a href="{{ route('public.about') }}" class="{{ request()->is('tentang-kami') ? 'active' : '' }}">Tentang Kami</a></li>
                 <li><a href="{{ route('public.packages') }}" class="{{ request()->is('paket-penerbitan') ? 'active' : '' }}">Paket</a></li>
                 <li><a href="{{ route('public.steps') }}" class="{{ request()->is('terbitkan-buku') ? 'active' : '' }}">Terbitkan</a></li>
-                <li><a href="{{ route('public.books') }}" class="{{ request()->is('belanja-buku') ? 'active' : '' }}">Belanja</a></li>
+                {{-- <li><a href="{{ route('public.books') }}" class="{{ request()->is('belanja-buku') ? 'active' : '' }}">Belanja</a></li> --}}
                 <li><a href="{{ route('public.events') }}" class="{{ request()->is('event-menulis') ? 'active' : '' }}">Event</a></li>
                 <li><a href="{{ route('public.faq') }}" class="{{ request()->is('faq') ? 'active' : '' }}">FAQ</a></li>
                 <li><a href="{{ route('public.contact') }}" class="nav-cta">Hubungi Kami</a></li>
@@ -47,7 +47,7 @@
         <a href="{{ route('public.about') }}">Tentang Kami</a>
         <a href="{{ route('public.packages') }}">Paket Penerbitan</a>
         <a href="{{ route('public.steps') }}">Terbitkan Buku</a>
-        <a href="{{ route('public.books') }}">Belanja Buku</a>
+        {{-- <a href="{{ route('public.books') }}">Belanja Buku</a> --}}
         <a href="{{ route('public.events') }}">Event Menulis</a>
         <a href="{{ route('public.faq') }}">FAQ</a>
         <a href="{{ route('public.contact') }}">Hubungi Kami</a>
@@ -76,7 +76,7 @@
                 <ul style="list-style: none; display: grid; gap: 12px;">
                     <li><a href="{{ route('public.packages') }}" style="color: rgba(250,250,248,0.6); text-decoration: none; font-size: 14px;">Paket Penerbitan</a></li>
                     <li><a href="{{ route('public.steps') }}" style="color: rgba(250,250,248,0.6); text-decoration: none; font-size: 14px;">Prosedur Terbit</a></li>
-                    <li><a href="{{ route('public.books') }}" style="color: rgba(250,250,248,0.6); text-decoration: none; font-size: 14px;">Toko Buku Online</a></li>
+                    {{-- <li><a href="{{ route('public.books') }}" style="color: rgba(250,250,248,0.6); text-decoration: none; font-size: 14px;">Toko Buku Online</a></li> --}}
                     <li><a href="{{ route('public.events') }}" style="color: rgba(250,250,248,0.6); text-decoration: none; font-size: 14px;">Event Menulis</a></li>
                 </ul>
             </div>
