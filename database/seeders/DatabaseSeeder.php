@@ -81,7 +81,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Paket Premium',
                 'tagline' => 'Untuk karya berkelas nasional',
                 'price' => 1500000,
-                'features' => json_encode(['E-Book + Cetak 25 Eksemplar', 'ISBN + KDT (Katalog Dalam Terbitan)', 'Desain Cover Eksklusif', 'Full Editorial Service', 'Naskah hingga 400 halaman', 'Distribusi Platform Digital', 'Promosi Media Sosial', 'Konsultasi Penulis 1-on-1']),
+                'features' => json_encode(['E-Book + Cetak 10 Eksemplar', 'ISBN + KDT (Katalog Dalam Terbitan)', 'Desain Cover Eksklusif', 'Full Editorial Service', 'Naskah hingga 400 halaman', 'Distribusi Platform Digital', 'Promosi Media Sosial', 'Konsultasi Penulis 1-on-1']),
                 'is_featured' => false,
                 'order' => 3,
             ],
