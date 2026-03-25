@@ -18,7 +18,7 @@
             <span class="about-img-icon">📚</span>
           </div>
           <div class="about-stat-badge">
-            <span class="num">2020</span>
+            <span class="num">2026</span>
             <span class="lbl">Tahun Berdiri</span>
           </div>
         </div>
