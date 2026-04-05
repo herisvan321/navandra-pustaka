@@ -9,6 +9,7 @@ Route::get('/faq', [PublicController::class, 'faq'])->name('public.faq');
 Route::get('/paket-penerbitan', [PublicController::class, 'packages'])->name('public.packages');
 Route::get('/terbitkan-buku', [PublicController::class, 'publishingSteps'])->name('public.steps');
 Route::get('/belanja-buku', [PublicController::class, 'books'])->name('public.books');
+Route::get('/belanja-buku/{slug}', [PublicController::class, 'bookDetail'])->name('public.books.show');
 Route::get('/tentang-kami', [PublicController::class, 'about'])->name('public.about');
 Route::get('/contact-us', [PublicController::class, 'contact'])->name('public.contact');
 Route::post('/contact-us', [PublicController::class, 'storeContact'])->name('public.contact.store');

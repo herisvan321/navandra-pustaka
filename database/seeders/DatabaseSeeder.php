@@ -105,19 +105,19 @@ class DatabaseSeeder extends Seeder
         }
 
         // Books
-        $books = [
-            ['title' => 'Di Antara Dua Musim', 'author' => 'Rina Anggraini', 'category' => 'Fiksi', 'price' => 75000],
-            ['title' => 'Merawat Literasi di Era Digital', 'author' => 'Dr. Ahmad Fauzi, M.Pd', 'category' => 'Non-Fiksi', 'price' => 85000],
-            ['title' => 'Surat dari Tepian Sungai', 'author' => 'Mira Dewi Saputri', 'category' => 'Puisi', 'price' => 65000],
-            ['title' => 'Metodologi Penelitian Kualitatif Modern', 'author' => 'Prof. Hendra Kusuma', 'category' => 'Akademik', 'price' => 120000],
-            ['title' => 'Antologi Cerpen "Tanah Air Beta"', 'author' => '35 Penulis Indonesia', 'category' => 'Antologi', 'price' => 90000],
-            ['title' => 'Kewirausahaan Berbasis Konten Lokal', 'author' => 'Budi Santoso, S.E., M.M.', 'category' => 'Non-Fiksi', 'price' => 95000],
-            ['title' => 'Ranah Minang di Mata Pena', 'author' => 'Sari Wahyuni', 'category' => 'Fiksi Lokal', 'price' => 70000],
-            ['title' => 'Sajak-Sajak Pantai Barat', 'author' => 'Laila Amalia, S.S.', 'category' => 'Puisi', 'price' => 60000],
-        ];
-        foreach ($books as $book) {
-            Book::updateOrCreate(['title' => $book['title']], array_merge($book, ['status' => 'published']));
-        }
+        // $books = [
+        //     ['title' => 'Di Antara Dua Musim', 'author' => 'Rina Anggraini', 'category' => 'Fiksi', 'price' => 75000],
+        //     ['title' => 'Merawat Literasi di Era Digital', 'author' => 'Dr. Ahmad Fauzi, M.Pd', 'category' => 'Non-Fiksi', 'price' => 85000],
+        //     ['title' => 'Surat dari Tepian Sungai', 'author' => 'Mira Dewi Saputri', 'category' => 'Puisi', 'price' => 65000],
+        //     ['title' => 'Metodologi Penelitian Kualitatif Modern', 'author' => 'Prof. Hendra Kusuma', 'category' => 'Akademik', 'price' => 120000],
+        //     ['title' => 'Antologi Cerpen "Tanah Air Beta"', 'author' => '35 Penulis Indonesia', 'category' => 'Antologi', 'price' => 90000],
+        //     ['title' => 'Kewirausahaan Berbasis Konten Lokal', 'author' => 'Budi Santoso, S.E., M.M.', 'category' => 'Non-Fiksi', 'price' => 95000],
+        //     ['title' => 'Ranah Minang di Mata Pena', 'author' => 'Sari Wahyuni', 'category' => 'Fiksi Lokal', 'price' => 70000],
+        //     ['title' => 'Sajak-Sajak Pantai Barat', 'author' => 'Laila Amalia, S.S.', 'category' => 'Puisi', 'price' => 60000],
+        // ];
+        // foreach ($books as $book) {
+        //     Book::updateOrCreate(['title' => $book['title']], array_merge($book, ['status' => 'published']));
+        // }
 
         // News / Documentation
         $news = [

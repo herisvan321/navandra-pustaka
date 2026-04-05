@@ -56,6 +56,17 @@ class PublicController extends Controller
         return view('public.books', compact('books'));
     }
 
+    public function bookDetail($slug)
+    {
+        $book = Book::where('slug', $slug)->firstOrFail();
+        $relatedBooks = Book::where('category', $book->category)
+            ->where('id', '!=', $book->id)
+            ->take(4)
+            ->get();
+
+        return view('public.book-detail', compact('book', 'relatedBooks'));
+    }
+
     public function about()
     {
         $profile = CompanyProfile::first();

@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Repositories\BookRepository;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 use App\Traits\HasWebpUpload;
 
@@ -22,6 +23,7 @@ class BookService extends BaseService
         if ($cover) {
             $data['cover_image'] = $this->uploadAndConvertWebp($cover, 'books');
         }
+        $data['slug'] = Str::slug($data['title']);
         return $this->create($data);
     }
 
@@ -34,6 +36,7 @@ class BookService extends BaseService
             }
             $data['cover_image'] = $this->uploadAndConvertWebp($image, 'books');
         }
+        $data['slug'] = Str::slug($data['title']);
         return $this->update($id, $data);
     }
 

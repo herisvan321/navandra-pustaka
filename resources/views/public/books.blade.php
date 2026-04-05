@@ -23,15 +23,19 @@
       <div class="book-grid" id="bookGrid">
         @forelse($books as $book)
         <div class="book-item" data-cat="{{ $book->category }}">
-          <div class="book-cover" style="background:linear-gradient(135deg,#1a3260,#2a4f8c);">
-            @if($book->cover_image)
-                <img src="{{ asset('storage/' . $book->cover_image) }}" class="w-full h-full object-cover">
-            @else
-                📕
-            @endif
-          </div>
+          <a href="{{ route('public.books.show', $book->slug) }}" class="book-link" style="text-decoration: none; color: inherit;">
+            <div class="book-cover" style="background:linear-gradient(135deg,#1a3260,#2a4f8c);">
+              @if($book->cover_image)
+                  <img src="{{ asset('storage/' . $book->cover_image) }}" class="w-full h-full object-cover">
+              @else
+                  📕
+              @endif
+            </div>
+          </a>
           <div class="book-info">
-            <h4>{{ $book->title }}</h4>
+            <a href="{{ route('public.books.show', $book->slug) }}" style="text-decoration: none; color: inherit;">
+              <h4>{{ $book->title }}</h4>
+            </a>
             <div class="author">{{ $book->author }}</div>
             <div class="badge badge-gold" style="margin-bottom:8px;">{{ $book->category ?? 'Buku' }}</div>
             <div class="price">Rp {{ number_format($book->price, 0, ',', '.') }}</div>
