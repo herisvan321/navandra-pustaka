@@ -143,10 +143,10 @@ class DatabaseSeeder extends Seeder
 
         // Writing Events
         $events = [
-            ['title' => 'Antologi Cerpen Nasional "Melintas Batas 2025"', 'type' => 'Antologi', 'genre' => 'Cerpen', 'description' => 'Kirimkan cerpen terbaikmu dengan tema "keberagaman, persatuan, dan identitas nusantara".', 'deadline' => '2025-04-30'],
-            ['title' => 'Lomba Menulis Puisi "Suara Alam Minangkabau"', 'type' => 'Lomba', 'genre' => 'Puisi', 'description' => 'Abadikan keindahan alam dan budaya Minangkabau dalam bait-bait puisi yang memukau.', 'deadline' => '2025-05-15'],
-            ['title' => 'Workshop Penulisan Buku Non-Fiksi Intensif', 'type' => 'Workshop', 'genre' => 'Non-Fiksi', 'description' => 'Workshop 2 hari intensif bersama penulis dan editor berpengalaman.', 'deadline' => '2025-06-01'],
-            ['title' => 'Proyek Antologi Anak "Cerita dari Kampung Kami"', 'type' => 'Antologi', 'genre' => 'Cerita Pendek', 'description' => 'Proyek penulisan khusus penulis muda Indonesia usia 10–17 tahun.', 'deadline' => '2025-07-01'],
+            ['title' => 'Antologi Cerpen Nasional "Melintas Batas 2026"', 'type' => 'Antologi', 'genre' => 'Cerpen', 'description' => 'Kirimkan cerpen terbaikmu dengan tema "keberagaman, persatuan, dan identitas nusantara".', 'deadline' => '2026-04-30'],
+            ['title' => 'Lomba Menulis Puisi "Suara Alam Minangkabau"', 'type' => 'Lomba', 'genre' => 'Puisi', 'description' => 'Abadikan keindahan alam dan budaya Minangkabau dalam bait-bait puisi yang memukau.', 'deadline' => '2026-05-15'],
+            ['title' => 'Workshop Penulisan Buku Non-Fiksi Intensif', 'type' => 'Workshop', 'genre' => 'Non-Fiksi', 'description' => 'Workshop 2 hari intensif bersama penulis dan editor berpengalaman.', 'deadline' => '2026-06-01'],
+            ['title' => 'Proyek Antologi Anak "Cerita dari Kampung Kami"', 'type' => 'Antologi', 'genre' => 'Cerita Pendek', 'description' => 'Proyek penulisan khusus penulis muda Indonesia usia 10–17 tahun.', 'deadline' => '2026-07-01'],
         ];
         foreach ($events as $event) {
             WritingEvent::updateOrCreate(['title' => $event['title']], array_merge($event, ['is_active' => true]));
