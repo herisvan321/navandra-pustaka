@@ -25,7 +25,7 @@
         <div class="about-text">
           <h2>Mitra Literasi Terpercaya di Nusantara</h2>
           <p>{{ $profile->about ?? 'CV Nevandra Pustaka Nusantara adalah perusahaan multisektoral yang bergerak di bidang literasi, penerbitan, percetakan, teknologi informasi, dan pengembangan sumber daya manusia.' }}</p>
-          <p>Berlandaskan semangat inovasi dan dedikasi terhadap penyebaran ilmu pengetahuan, kami hadir sebagai mitra strategis dalam menghilirkan gagasan menjadi produk nyata yang bernilai tinggi.</p>
+          <!-- <p>Berlandaskan semangat inovasi dan dedikasi terhadap penyebaran ilmu pengetahuan, kami hadir sebagai mitra strategis dalam menghilirkan gagasan menjadi produk nyata yang bernilai tinggi.</p> -->
           <a href="{{ route('public.contact') }}" class="btn-primary" style="margin-top:8px;">📞 Hubungi Kami</a>
         </div>
       </div>
