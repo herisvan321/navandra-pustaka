@@ -50,10 +50,14 @@
 
                 <div class="form-group">
                     <label>Logo Perusahaan</label>
-                    <input type="file" name="logo" id="logoInput" accept="image/*" class="@error('logo') invalid @enderror">
-                    <div id="logoPreviewContainer" style="margin-top: 10px;">
-                        <img id="logoPreview" src="{{ $profile->logo_path ? asset('storage/' . $profile->logo_path) : '' }}" style="{{ $profile->logo_path ? '' : 'display: none;' }} max-height: 80px; border-radius: 5px; border: 1px solid var(--border-color);">
+                    <div class="image-preview-wrapper preview-logo" onclick="document.getElementById('logoInput').click()" style="cursor: pointer;">
+                        <div class="preview-placeholder" id="placeholder" style="{{ $profile->logo_path ? 'display: none;' : '' }}">
+                            <i class="fas fa-image"></i>
+                            <span>Pilih Logo</span>
+                        </div>
+                        <img id="logoPreview" src="{{ $profile->logo_path ? asset('storage/' . $profile->logo_path) : '' }}" class="preview-img" style="{{ $profile->logo_path ? 'object-fit: contain;' : 'display: none;' }}">
                     </div>
+                    <input type="file" name="logo" id="logoInput" accept="image/*" class="@error('logo') invalid @enderror" style="display: none;">
                     @error('logo') <span class="error-text">{{ $message }}</span> @enderror
                 </div>
 
@@ -95,6 +99,7 @@
 <script>
     const logoInput = document.getElementById('logoInput');
     const logoPreview = document.getElementById('logoPreview');
+    const placeholder = document.getElementById('placeholder');
 
     if (logoInput) {
         logoInput.addEventListener('change', function() {
@@ -104,6 +109,8 @@
                 reader.onload = function(e) {
                     logoPreview.src = e.target.result;
                     logoPreview.style.display = 'block';
+                    logoPreview.style.objectFit = 'contain';
+                    if (placeholder) placeholder.style.display = 'none';
                 }
                 reader.readAsDataURL(file);
             }

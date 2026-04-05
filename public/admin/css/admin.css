@@ -410,14 +410,15 @@ input[type="email"],
 input[type="password"],
 input[type="number"],
 input[type="date"],
+input[type="url"],
 select,
 textarea {
     width: 100%;
-    padding: 12px 16px;
+    padding: 10px 14px;
     background-color: var(--bg-body);
     color: var(--text-main);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 0.9rem;
     transition: all 0.2s;
     outline: none;
@@ -583,6 +584,43 @@ input.invalid:focus, select.invalid:focus, textarea.invalid:focus {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.image-preview-wrapper.preview-logo {
+    height: 120px;
+    background-color: var(--bg-card);
+}
+
+.img-thumbnail-small {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.img-thumbnail-medium {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.img-thumbnail-book {
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.img-thumbnail-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
 }
 
 @keyframes previewFadeIn {

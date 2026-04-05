@@ -29,10 +29,10 @@
                 <tr>
                     <td>
                         @if($book->cover_image)
-                            <img src="{{ asset('storage/' . $book->cover_image) }}" alt="{{ $book->title }}" style="width: 50px; height: 75px; object-fit: cover; border-radius: 5px;">
+                            <img src="{{ asset('storage/' . $book->cover_image) }}" alt="{{ $book->title }}" class="img-thumbnail-book">
                         @else
-                            <div style="width: 50px; height: 75px; background: var(--border-color); border-radius: 5px; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-book" style="color: var(--text-muted);"></i>
+                            <div class="img-thumbnail-book" style="display: flex; align-items: center; justify-content: center; background: var(--bg-body);">
+                                <i class="fas fa-book" style="color: var(--text-muted); opacity: 0.5;"></i>
                             </div>
                         @endif
                     </td>

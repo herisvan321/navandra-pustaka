@@ -15,17 +15,14 @@ class CompanyProfileRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'tagline' => 'nullable|string|max:255',
             'logo' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
             'email' => 'required|email|max:255',
             'phone' => 'nullable|string|max:20',
-            'whatsapp' => 'nullable|string|max:20',
             'address' => 'nullable|string',
-            'facebook' => 'nullable|url|max:255',
-            'instagram' => 'nullable|url|max:255',
-            'twitter' => 'nullable|url|max:255',
-            'youtube' => 'nullable|url|max:255',
-            'about_footer' => 'nullable|string|max:500',
+            'instagram_url' => 'nullable|url|max:255',
+            'facebook_url' => 'nullable|url|max:255',
+            'twitter_url' => 'nullable|url|max:255',
+            'about' => 'nullable|string',
         ];
     }
 
@@ -33,13 +30,14 @@ class CompanyProfileRequest extends FormRequest
     {
         return [
             'name' => 'Nama Perusahaan',
-            'tagline' => 'Slogan',
             'logo' => 'Logo',
             'email' => 'Email Kontak',
-            'phone' => 'Telepon',
-            'whatsapp' => 'WhatsApp',
+            'phone' => 'Telepon / WhatsApp',
             'address' => 'Alamat',
-            'about_footer' => 'Tentang Kami (Footer)',
+            'instagram_url' => 'Instagram URL',
+            'facebook_url' => 'Facebook URL',
+            'twitter_url' => 'Twitter URL',
+            'about' => 'Tentang Kami',
         ];
     }
 }

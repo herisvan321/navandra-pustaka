@@ -19,13 +19,13 @@
         @csrf
         @method('PUT')
         
-        <div class="grid-2" style="grid-template-columns: 3fr 1fr; margin-top: 20px;">
+        <div class="grid-2" style="margin-top: 20px;">
             <div class="form-group">
                 <label>Judul Langkah</label>
                 <input type="text" name="title" value="{{ old('title', $step->title) }}" required placeholder="E.g. Kirim Naskah, Review Editor..." class="@error('title') invalid @enderror">
                 @error('title') <span class="error-text">{{ $message }}</span> @enderror
             </div>
-            <div class="form-group">
+            <div class="form-group" style="max-width: 150px;">
                 <label>Urutan (Order)</label>
                 <input type="number" name="order" value="{{ old('order', $step->order) }}" required placeholder="0" class="@error('order') invalid @enderror">
                 @error('order') <span class="error-text">{{ $message }}</span> @enderror
@@ -46,7 +46,7 @@
 
         <div style="display: flex; gap: 15px; justify-content: flex-end; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-color);">
             <a href="{{ route('admin.publishing-steps.index') }}" class="btn" style="background: var(--border-color); color: var(--text-main);">Batal</a>
-            <button type="submit" class="btn btn-primary" style="padding: 12px 30px;">Simpan Perubahan</button>
+            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
         </div>
     </form>
 </div>

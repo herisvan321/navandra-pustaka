@@ -106,12 +106,12 @@
                         <span class="menu-text">Pesan Masuk</span>
                     </a>
                 </li>
-                <li class="menu-item">
+                <!-- <li class="menu-item">
                     <a href="{{ route('admin.company-profile.edit') }}" class="menu-link {{ request()->routeIs('admin.company-profile.*') ? 'active' : '' }}">
                         <i class="fas fa-building"></i>
                         <span class="menu-text">Profil Perusahaan</span>
                     </a>
-                </li>
+                </li> -->
                 <li class="menu-item">
                     <a href="{{ route('admin.users.index') }}" class="menu-link {{ request()->routeIs('admin.users.*') ? 'active' : '' }}">
                         <i class="fas fa-user-shield"></i>

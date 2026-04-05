@@ -30,10 +30,10 @@
                     <td>
                         <div style="display: flex; align-items: center; gap: 10px;">
                             @if($item->avatar_path)
-                                <img src="{{ asset('storage/' . $item->avatar_path) }}" alt="{{ $item->name }}" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                                <img src="{{ asset('storage/' . $item->avatar_path) }}" alt="{{ $item->name }}" class="img-thumbnail-avatar">
                             @else
-                                <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--border-color); display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-user" style="color: var(--text-muted); font-size: 0.8rem;"></i>
+                                <div class="img-thumbnail-avatar" style="background: var(--bg-body); display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-user" style="color: var(--text-muted); font-size: 0.8rem; opacity: 0.5;"></i>
                                 </div>
                             @endif
                             <strong>{{ $item->name }}</strong>

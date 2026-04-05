@@ -28,10 +28,10 @@
                 <tr>
                     <td>
                         @if($item->image_path)
-                            <img src="{{ asset('storage/' . $item->image_path) }}" alt="{{ $item->title }}" style="width: 100px; height: 60px; object-fit: cover; border-radius: 5px; cursor: pointer;" onclick="window.open(this.src)">
+                            <img src="{{ asset('storage/' . $item->image_path) }}" alt="{{ $item->title }}" class="img-thumbnail-medium" onclick="window.open(this.src)" style="cursor: pointer;">
                         @else
-                            <div style="width: 100px; height: 60px; background: var(--border-color); border-radius: 5px; display: flex; align-items: center; justify-content: center;">
-                                <i class="fas fa-image" style="color: var(--text-muted);"></i>
+                            <div class="img-thumbnail-medium" style="display: flex; align-items: center; justify-content: center; background: var(--bg-body);">
+                                <i class="fas fa-image" style="color: var(--text-muted); opacity: 0.5;"></i>
                             </div>
                         @endif
                     </td>

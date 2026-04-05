@@ -19,6 +19,10 @@ class CompanyProfile extends Model
         'address',
         'phone',
         'email',
+        'logo_path',
+        'instagram_url',
+        'facebook_url',
+        'twitter_url',
         'social_links',
     ];
 

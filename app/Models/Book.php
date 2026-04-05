@@ -20,6 +20,7 @@ class Book extends Model
         'description',
         'price',
         'status',
+        'cover_image',
     ];
 
     protected $casts = [

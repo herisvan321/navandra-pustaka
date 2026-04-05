@@ -32,10 +32,10 @@ class CompanyProfileService extends BaseService
     {
         $profile = $this->getProfile();
         if ($logo) {
-            if ($profile->logo) {
-                Storage::disk('public')->delete($profile->logo);
+            if ($profile->logo_path) {
+                Storage::disk('public')->delete($profile->logo_path);
             }
-            $data['logo'] = $this->uploadAndConvertWebp($logo, 'profile');
+            $data['logo_path'] = $this->uploadAndConvertWebp($logo, 'profile');
         }
         return $this->update(1, $data);
     }
